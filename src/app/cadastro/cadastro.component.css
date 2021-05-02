@@ -58,3 +58,35 @@ button {
 button:hover {
     background-color: rgb(33, 92, 33);
 }
+
+.alunos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+span{
+    margin: 5px;
+    display: block;
+    text-align: center;
+    background-color: #212121;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+}
+
+span:hover{
+    background-color: #504d4d;
+}
+.read {
+    background-color: rgb(205, 232, 235);
+    border:1px solid rgb(205, 232, 235);
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-style: italic;
+}

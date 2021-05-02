@@ -1,21 +1,73 @@
+
 <div class="container">
-    <label for="nome">Nome</label>
-    <input type="text" id="nome">
+    <div class="alunos">
+        <div class="alunos-box" *ngFor="let cadastro of alunos"
+            [class.selected]="cadastro === selectedAluno"
+            (click)="onSelect(cadastro)"
+        >
+        <span class="badge">{{cadastro.name}}</span> 
+        </div>
+    </div>
 
-    <label for="sobrenome">Sobrenome</label>
-    <input type="text" id="sobrenome">
+    <div class="" *ngIf="!selectedAluno">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+    </div>
 
-    <label for="telefone">Telefone</label>
-    <input type="tel" id="telefone" placeholder="(11) 00000-000">
+    <div class="" *ngIf="selectedAluno">
+        <label for="nome">Nome</label>
+        <input class="read" [(ngModel)]="selectedAluno.name" type="text" id="nome" readonly>
+    </div>
 
-    <label for="curso">Curso</label>
-    <input type="text" id="curso">
 
-    <label for="cidade">Cidade</label>
-    <input type="text" id="cidade">
+
+    <div class="" *ngIf="!selectedAluno">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome">
+    </div>
+
+    <div class="" *ngIf="selectedAluno">
+        <label for="sobrenome">Sobrenome</label>
+        <input class="read" [(ngModel)]="selectedAluno.subname" type="text" id="sobrenome" readonly>
+    </div>
+    
+    
+
+    <div class="" *ngIf="!selectedAluno">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" placeholder="(11) 00000-000">
+    </div>
+
+    <div class="" *ngIf="selectedAluno">
+        <label for="telefone">Telefone</label>
+        <input class="read" [(ngModel)]="selectedAluno.telefone" type="tel" id="telefone" placeholder="(11) 00000-000" readonly>
+    </div>
+
+
+    <div class="" *ngIf="!selectedAluno">
+        <label for="curso">Curso</label>
+        <input type="text" id="curso">
+    </div>
+
+    <div class="" *ngIf="selectedAluno">
+        <label for="curso">Curso</label>
+        <input class="read" [(ngModel)]="selectedAluno.curso" type="text" id="curso" readonly>
+    </div>
+
+
+    <div class="" *ngIf="!selectedAluno">
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade">
+    </div>
+
+    <div class="" *ngIf="selectedAluno">
+        <label for="cidade">Cidade</label>
+        <input class="read" [(ngModel)]="selectedAluno.cidade" type="text" id="cidade" readonly>
+    </div>
+    
 
     <label for="mensagem">Mensagem</label>
     <textarea name="mensagem" id="mensagem" cols="60" rows="10"></textarea>
 
-    <button>Enviar</button>
+    <button type="reset">Enviar</button>
 </div>
