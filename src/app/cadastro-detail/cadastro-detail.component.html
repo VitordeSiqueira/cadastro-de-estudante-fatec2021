@@ -1,57 +1,57 @@
-<div class="" *ngIf="!selectedAluno">
+<div class="" *ngIf="!cadastro">
     <label for="nome">Nome</label>
     <input type="text" id="nome">
 </div>
 
-<div class="" *ngIf="selectedAluno">
+<div class="" *ngIf="cadastro">
     <label for="nome">Nome</label>
-    <input class="read" [(ngModel)]="selectedAluno.name" type="text" id="nome" readonly>
+    <input class="read" [(ngModel)]="cadastro.name" type="text" id="nome" readonly>
 </div>
 
 
 
-<div class="" *ngIf="!selectedAluno">
+<div class="" *ngIf="!cadastro">
     <label for="sobrenome">Sobrenome</label>
     <input type="text" id="sobrenome">
 </div>
 
-<div class="" *ngIf="selectedAluno">
+<div class="" *ngIf="cadastro">
     <label for="sobrenome">Sobrenome</label>
-    <input class="read" [(ngModel)]="selectedAluno.subname" type="text" id="sobrenome" readonly>
+    <input class="read" [(ngModel)]="cadastro.subname" type="text" id="sobrenome" readonly>
 </div>
 
 
 
-<div class="" *ngIf="!selectedAluno">
+<div class="" *ngIf="!cadastro">
     <label for="telefone">Telefone</label>
     <input type="tel" id="telefone" placeholder="(11) 00000-000">
 </div>
 
-<div class="" *ngIf="selectedAluno">
+<div class="" *ngIf="cadastro">
     <label for="telefone">Telefone</label>
-    <input class="read" [(ngModel)]="selectedAluno.telefone" type="tel" id="telefone" placeholder="(11) 00000-000" readonly>
+    <input class="read" [(ngModel)]="cadastro.telefone" type="tel" id="telefone" placeholder="(11) 00000-000" readonly>
 </div>
 
 
-<div class="" *ngIf="!selectedAluno">
+<div class="" *ngIf="!cadastro">
     <label for="curso">Curso</label>
     <input type="text" id="curso">
 </div>
 
-<div class="" *ngIf="selectedAluno">
+<div class="" *ngIf="cadastro">
     <label for="curso">Curso</label>
-    <input class="read" [(ngModel)]="selectedAluno.curso" type="text" id="curso" readonly>
+    <input class="read" [(ngModel)]="cadastro.curso" type="text" id="curso" readonly>
 </div>
 
 
-<div class="" *ngIf="!selectedAluno">
+<div class="" *ngIf="!cadastro">
     <label for="cidade">Cidade</label>
     <input type="text" id="cidade">
 </div>
 
-<div class="" *ngIf="selectedAluno">
+<div class="" *ngIf="cadastro">
     <label for="cidade">Cidade</label>
-    <input class="read" [(ngModel)]="aluno.cidade" type="text" id="cidade" readonly>
+    <input class="read" [(ngModel)]="cadastro.cidade" type="text" id="cidade" readonly>
 </div>
 
 
