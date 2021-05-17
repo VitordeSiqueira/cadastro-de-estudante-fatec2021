@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="alunos">
+        <div class="alunos-box" 
+        *ngFor="let cadastro of alunos" 
+
+            [class.selected]="cadastro===selectedAluno"
+
+            (click)="onSelect(cadastro)">
+            <span class="badge">{{cadastro.name}}</span>
+        </div>
+
+    </div>
+    
+<app-cadastro-detail [cadastro]="selectedAluno"></app-cadastro-detail>
