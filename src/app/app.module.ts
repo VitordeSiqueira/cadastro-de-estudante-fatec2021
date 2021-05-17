@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { CadastroDetailComponent } from './cadastro-detail/cadastro-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
-    CadastroDetailComponent
+    CadastroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
