@@ -23,7 +23,7 @@ export const ALUNOS: cadastro[] = [
     curso: 'GTI', 
     cidade: 'Itu'
   },
-  
+
   { id: 4, 
     name: 'Vanessa', 
     subname: 'Santos', 

@@ -54,6 +54,13 @@ button {
     border-radius: 50px;
     transition: all 0.2s linear;
 }
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 button:hover {
     background-color: rgb(33, 92, 33);

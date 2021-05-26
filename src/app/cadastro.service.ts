@@ -17,6 +17,11 @@ export class CadastroService {
     const alunos = of(ALUNOS)
     this.messageService.add('Inválido')
     return alunos
-}
+  }
 
+  getcadastro(id: number): Observable<cadastro> {
+    const aluno = ALUNOS.find(h => h.id === id) as cadastro
+    this.messageService.add(`CadastroService: fetched aluno id=${id}`)
+    return of(aluno)
+  }
 }
